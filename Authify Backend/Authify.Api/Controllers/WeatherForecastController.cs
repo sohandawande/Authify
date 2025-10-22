@@ -8,7 +8,7 @@ namespace Authify.Api.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching","Rainy","Windy","Humid"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching","Rainy","Windy"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
