@@ -1,87 +1,67 @@
-# .gitignore for a .NET 8 solution developed with Visual Studio 2022
-# Suitable for Windows development; includes common IDE, build, package and OS artifacts.
-
-# Visual Studio
+# Visual Studio / .NET / Rider common ignores
 .vs/
+.vscode/
+.idea/
+
+# Build artifacts
+bin/
+obj/
+out/
+artifacts/
+publish/
+
+# NuGet
+packages/
+*.nupkg
+.nuget/packages/
+
+# Rider / ReSharper
+*.sln.iml
+_ReSharper*/
+*.DotSettings.user
+
+# User-specific files
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
 
-# Build outputs
-[Bb]in/
-[Oo]bj/
-artifacts/
-publish/
-publishOutput/
+# Tooling
+*.dotnet/
+.dotnet/
+.dotnet_tool_state.json
+.vsconfig
 
-# Rider / JetBrains
-.idea/
-*.sln.iml
-*.iws
-*.ipr
-
-# VS Code
-.vscode/
-
-# NuGet
-packages/
-*.nupkg
-*.snupkg
-.nuget/packages/
-
-# Dotnet publish and temporary files
-*.dll
-*.exe
-*.pdb
-*.ilk
+# Logs, telemetry, test results, coverage
 *.log
-*.cache
-*.zip
-
-# Visual Studio publish profiles
-Properties/PublishProfiles/*.pubxml.user
-
-# IIS Express
-/.vs/*/applicationHost.config
-/.vs/*/config/
-iisexpress/
-
-# User secrets (if present in repo during development)
-secrets.json
-
-# Entity Framework Migrations (if you keep generated SQL or temp files)
-**/Migrations/*.Designer.cs
-
-# Test results and coverage
 TestResults/
-*.trx
-*.coverage
-coverage.opencover.xml
-coverage.*
+coverage/
+coverage.*.xml
 
-# Rider & ReSharper
-_ReSharper*/
-*.DotSettings.user
+# Database files
+*.mdf
+*.ldf
+*.db
 
-# Certificate files
-*.pfx
-*.p12
+# Azure Functions and local settings
+local.settings.json
 
-# npm / frontend (if any front-end assets present)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Secrets
+secrets.json
+secrets.*.json
 
-# Logs
-*.log
+# Publish and installer outputs
+*.Publish.xml
+publish/
 
 # OS files
 .DS_Store
 Thumbs.db
+ehthumbs.db
 
 # Misc
-*~            # temporary editor files
-*.swp
-*.swo
+*.cache
+*.vsix
+*.dbmdl
+.env
+node_modules/
