@@ -1,0 +1,87 @@
+# .gitignore for a .NET 8 solution developed with Visual Studio 2022
+# Suitable for Windows development; includes common IDE, build, package and OS artifacts.
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+artifacts/
+publish/
+publishOutput/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+.nuget/packages/
+
+# Dotnet publish and temporary files
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.log
+*.cache
+*.zip
+
+# Visual Studio publish profiles
+Properties/PublishProfiles/*.pubxml.user
+
+# IIS Express
+/.vs/*/applicationHost.config
+/.vs/*/config/
+iisexpress/
+
+# User secrets (if present in repo during development)
+secrets.json
+
+# Entity Framework Migrations (if you keep generated SQL or temp files)
+**/Migrations/*.Designer.cs
+
+# Test results and coverage
+TestResults/
+*.trx
+*.coverage
+coverage.opencover.xml
+coverage.*
+
+# Rider & ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Certificate files
+*.pfx
+*.p12
+
+# npm / frontend (if any front-end assets present)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*~            # temporary editor files
+*.swp
+*.swo
